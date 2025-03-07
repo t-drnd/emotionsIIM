@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-  </header>
-  <main>
-    <container>
-        <div class="joie"></div> 
-        <div class="colère"></div>
-        <div class="surprise"></div>
-        <div class="peur"></div>
-        <div class="excitation"></div>
-        <div class="tristesse"></div>
-    </container>
-  </main>
-  <footer>
-  </footer>
-  <script src="../JS/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>What are emotions ?</h1>
+
+    <div class="slider-container">
+      <div class="emotion-div" id="joy">
+        <a href="#joie">
+          <div class="emotion-color joy-circle"></div>
+          <h3>Joie</h3>
+        </a>
+      </div>
+      <div class="arrow-div">
+        <i class="fa-solid fa-right-long"></i>
+      </div>
+      <div class="emotion-div" id="joy">
+        <a href="#colere">
+          <div class="emotion-color colere-circle"></div>
+          <h3>Colère</h3>
+        </a>
+      </div>
+      <div class="arrow-div">
+        <i class="fa-solid fa-right-long"></i>
+      </div>
+      <div class="emotion-div" id="joy">
+        <a href="#surprise">
+          <div class="emotion-color surprise-circle"></div>
+          <h3>Surprise</h3>
+        </a>
+      </div>
+      <div class="arrow-div">
+        <i class="fa-solid fa-right-long"></i>
+      </div>
+      <div class="emotion-div" id="joy">
+        <a href="#peur">
+          <div class="emotion-color peur-circle"></div>
+          <h3>Peur</h3>
+        </a>
+      </div>
+      <div class="arrow-div">
+        <i class="fa-solid fa-right-long"></i>
+      </div>
+      <div class="emotion-div" id="joy">
+        <a href="#calme">
+          <div class="emotion-color calme-circle"></div>
+          <h3>Calme</h3>
+        </a>
+      </div>
+      <div class="arrow-div">
+        <i class="fa-solid fa-right-long"></i>
+      </div>
+      <div class="emotion-div" id="joy">
+        <a href="#tristesse">
+          <div class="emotion-color tristesse-circle"></div>
+          <h3>Tristesse</h3>
+        </a>
+      </div>
+    </div>
+
+    <div id="joie" class="joieanchor anchor"></div>
+
+    <div class="joy-section emotion-section">
+      <h2>Joie</h2>
+      <div class="emotion-container">
+        <button type="button" id="joy-button">La joie, c'est quoi ?</button>
+      </div>
+    </div>
+
+    <div id="colere" class="colereanchor anchor"></div>
+
+    <div class="colere-section emotion-section">
+      <h2>Colère</h2>
+      <div class="emotion-container">
+        <button type="button" id="colere-button">
+          La colère, c'est quoi ?
+        </button>
+      </div>
+    </div>
+
+    <div id="surprise" class="surpriseanchor anchor"></div>
+
+    <div class="surprise-section emotion-section">
+      <h2>Surprise</h2>
+      <div class="emotion-container">
+        <button type="button" id="surprise-button">
+          La surprise, c'est quoi ?
+        </button>
+      </div>
+    </div>
+
+    <div id="peur" class="peuranchor anchor"></div>
+
+    <div class="peur-section emotion-section">
+      <h2>Peur</h2>
+      <div class="emotion-container">
+        <button type="button" id="peur-button">La peur, c'est quoi ?</button>
+      </div>
+    </div>
+
+    <div id="calme" class="calmeanchor anchor"></div>
+
+    <div class="calme-section emotion-section">
+      <h2>Calme</h2>
+      <div class="emotion-container">
+        <button type="button" id="calme-button">Le calme, c'est quoi ?</button>
+      </div>
+    </div>
+
+    <div id="tristesse" class="tristesseanchor anchor"></div>
+
+    <div class="tristesse-section emotion-section">
+      <h2>Tristesse</h2>
+      <div class="emotion-container">
+        <button type="button" id="tristesse-button">
+          La tristesse, c'est quoi ?
+        </button>
+      </div>
+    </div>
+    <script src="../JS/script.js"></script>
+  </body>
 </html>
