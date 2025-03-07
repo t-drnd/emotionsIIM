@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: rgb(255, 136, 0);
+  font-family: "Bagel Fat One";
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.emotion-color {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.emotion-div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.emotion-div h3 {
+  color: #111;
+  font-family: "Borel";
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.joy-circle {
+  background-color: #ffff1f;
+}
+.colere-circle {
+  background-color: #8d0000;
+}
+.surprise-circle {
+  background-color: #00ab00;
+}
+.peur-circle {
+  background-color: #13006a;
+}
+.calme-circle {
+  background-color: #fff;
+  border: 1px solid #111;
+}
+.tristesse-circle {
+  background-color: #59a4ff;
+}
+
+.arrow-div {
+  margin-top: 1rem;
+}
+
+.arrow-div i {
+  font-size: 4rem;
+  color: rgb(255, 136, 0);
+}
+
+.emotion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotion-section h2 {
+  color: rgb(255, 136, 0);
+  font-family: "Bagel Fat One";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.emotion-container {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-color: #cccccc;
+  border: 5px solid #111;
+  border-radius: 25px;
+}
+
+.emotion-container button {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-family: "Borel";
+  transition: colors 0.3s ease-in-out;
+}
+
+#joy-button:hover,
+#joy-button:focus {
+  animation: pulsejoy 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #ffff1f;
+  cursor: pointer;
+}
+#colere-button:hover,
+#colere-button:focus {
+  animation: pulsecolere 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #8d0000;
+  color: #fff;
+  cursor: pointer;
+}
+#surprise-button:hover,
+#surprise-button:focus {
+  animation: pulsesurprise 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #00ab00;
+  color: #fff;
+  cursor: pointer;
+}
+#peur-button:hover,
+#peur-button:focus {
+  animation: pulsepeur 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #13006a;
+  color: #fff;
+  cursor: pointer;
+}
+#calme-button:hover,
+#calme-button:focus {
+  animation: pulsecalme 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+#tristesse-button:hover,
+#tristesse-button:focus {
+  animation: pulsetristesse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background: #59a4ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes pulsejoy {
+  0% {
+    box-shadow: 0 0 0 0 #ffff1f;
+  }
+}
+@keyframes pulsecolere {
+  0% {
+    box-shadow: 0 0 0 0 #8d0000;
+  }
+}
+@keyframes pulsesurprise {
+  0% {
+    box-shadow: 0 0 0 0 #00ab00;
+  }
+}
+@keyframes pulsepeur {
+  0% {
+    box-shadow: 0 0 0 0 #13006a;
+  }
+}
+@keyframes pulsecalme {
+  0% {
+    box-shadow: 0 0 0 0 #f4f4f4;
+  }
+}
+@keyframes pulsetristesse {
+  0% {
+    box-shadow: 0 0 0 0 #59a4ff;
+  }
+}
