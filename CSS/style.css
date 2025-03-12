@@ -104,6 +104,11 @@ h1 {
   background-color: #cccccc;
   border: 5px solid #111;
   border-radius: 25px;
+  overflow: hidden;
+}
+
+.joy-section .emotion-container {
+  background-color: #b3e0ff;
 }
 
 .emotion-container button {
@@ -166,6 +171,101 @@ h1 {
   cursor: pointer;
 }
 
+.Flower {
+  width: 170px;
+  height: 170px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  transition: transform 2s ease-in-out;
+}
+
+/* Flower positions */
+.main-flower {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.flower-left {
+  left: 20%;
+}
+.flower-right {
+  left: 70%;
+}
+.flower-far-right {
+  left: 85%;
+}
+
+/* Different rotation speeds */
+.small-flower .FlowerHead {
+  animation: rotate-flower 5s linear infinite;
+}
+.tiny-flower .FlowerHead {
+  animation: rotate-flower 3s linear infinite;
+}
+.medium-flower .FlowerHead {
+  animation: rotate-flower 6s linear infinite;
+}
+
+.Flower .flowerContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.Flower img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* bottom: 20px; */
+}
+.FlowerHead {
+  transform-origin: center;
+  animation: rotate-flower 4s linear infinite;
+  z-index: 100;
+}
+.FlowerLeaves {
+  transform: translateY(30%);
+}
+/* Sun styles */
+.Sun {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+  display: none;
+}
+
+.Sun img {
+  width: 100%;
+  height: 100%;
+  animation: rotate-sun 20s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate-sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-flower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes pulsejoy {
   0% {
     box-shadow: 0 0 0 0 #ffff1f;
@@ -194,5 +294,42 @@ h1 {
 @keyframes pulsetristesse {
   0% {
     box-shadow: 0 0 0 0 #59a4ff;
+  }
+}
+
+/* Plane styles */
+.Plane {
+  position: absolute;
+  top: 25%;
+  left: -150px;
+  width: 150px;
+  height: 150px;
+  animation: fly-plane 15s linear infinite;
+  display: none;
+}
+
+.Plane img {
+  width: 100%;
+  height: 100%;
+}
+
+.calm-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Borel";
+  font-size: 2rem;
+  color: #111;
+  opacity: 0;
+  display: none;
+}
+
+@keyframes fly-plane {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: calc(100% + 150px);
   }
 }
